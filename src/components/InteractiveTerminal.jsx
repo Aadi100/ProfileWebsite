@@ -9,11 +9,18 @@ export default function InteractiveTerminal() {
   const [inputVal, setInputVal] = useState('');
   const [cmdHistory, setCmdHistory] = useState([]);
   const [historyPointer, setHistoryPointer] = useState(-1);
-  const bottomRef = useRef(null);
+  const screenRef = useRef(null);
   const inputRef = useRef(null);
+  const isInitialMount = useRef(true);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+    if (screenRef.current) {
+      screenRef.current.scrollTop = screenRef.current.scrollHeight;
+    }
   }, [history]);
 
   const executeCommand = (cmdStr) => {
@@ -165,6 +172,7 @@ export default function InteractiveTerminal() {
 
           {/* Terminal Screen Output */}
           <div
+            ref={screenRef}
             style={{
               padding: '1.5rem',
               minHeight: '340px',
@@ -228,7 +236,6 @@ export default function InteractiveTerminal() {
                 }}
               />
             </div>
-            <div ref={bottomRef} />
           </div>
 
         </div>
