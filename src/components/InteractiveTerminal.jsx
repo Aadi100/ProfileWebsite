@@ -76,7 +76,7 @@ export default function InteractiveTerminal() {
     }
   };
 
-  const quickCommands = ['help', 'whoami', 'skills', 'projects', 'repos', 'systems', 'contact', 'clear'];
+  const quickCommands = ['help', 'whoami', 'education', 'experience', 'skills', 'projects', 'systems', 'contact', 'clear'];
 
   return (
     <section id="terminal" className="section" style={{ background: 'var(--bg-primary)' }}>

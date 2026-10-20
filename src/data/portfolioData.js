@@ -1,10 +1,12 @@
 export const personalInfo = {
   name: "Engr. Abdul Hadi",
+  fullName: "Abdul Hadi Khan",
   nickname: "Aadi",
   title: "Software Engineer & Systems Architect",
   badge: "Available for Roles & High-Impact Projects",
   location: "Karachi, Pakistan",
   email: "aabdul.hadikhan10@gmail.com",
+  phone: "(+92) 3332216999",
   socials: {
     github: "https://github.com/Aadi100",
     linkedin: "https://www.linkedin.com/in/abdulhadi03/",
@@ -16,7 +18,7 @@ export const personalInfo = {
     { label: "Public Repositories", value: "10+" },
     { label: "Core Domains", value: "4+" },
     { label: "Architecture", value: "Systems to Cloud" },
-    { label: "Engineering Scope", value: "Full Stack" }
+    { label: "Degree", value: "BE Software Eng." }
   ],
   bio: `Software Engineer & Systems Architect specializing in the Microsoft .NET ecosystem (C#, ASP.NET Core, EF Core), modern React, and Applied AI. Combines deep full-stack and systems engineering with machine learning integration—from deploying on-device edge AI models (computer vision & TensorFlow Lite) and real-time behavioral anomaly detection, to architecting high-reliability IoT middleware and cloud platforms. Proven track record in designing thread-safe services, immutable audit ledgers, and secure database schemas (SQL Server, PostgreSQL) with strict RBAC. Passionate about leveraging intelligent systems and Clean Architecture to deliver fault-tolerant, scalable enterprise software in Agile environments.`
 };
@@ -150,12 +152,12 @@ export const skillCategories = [
     icon: "Code",
     description: "Robust type-safe programming across enterprise, systems, and web",
     skills: [
-      { name: "TypeScript", level: 92, note: "Full-Stack APIs & React Native" },
-      { name: "JavaScript (ESNext)", level: 95, note: "Modern React 19, Node.js" },
-      { name: "C# / .NET", level: 90, note: ".NET 4.8 / Core, WinForms, ASP.NET" },
-      { name: "Python", level: 85, note: "Automation, Scripting & Data" },
+      { name: "C# / .NET", level: 95, note: ".NET 8/9, .NET Framework 4.8, WinForms, ASP.NET MVC/Core" },
+      { name: "TypeScript & JavaScript", level: 94, note: "Modern React.js, Next.js, Node.js" },
+      { name: "Python", level: 88, note: "Flask, Django, Automation & Data Pipelines" },
+      { name: "SQL & Relational Design", level: 92, note: "SQL Server, PostgreSQL, MySQL query optimization" },
       { name: "C / C++", level: 80, note: "Systems programming & memory logic" },
-      { name: "PHP & SQL", level: 85, note: "Relational queries & Web backends" }
+      { name: "PHP", level: 82, note: "Server-side scripting & REST services" }
     ]
   },
   {
@@ -163,12 +165,12 @@ export const skillCategories = [
     icon: "Layout",
     description: "Responsive, high-frame-rate user interfaces with intuitive UX",
     skills: [
-      { name: "React 19 & React 18", level: 95, note: "Vite, Hooks, Custom Contexts" },
-      { name: "React Native & Expo", level: 90, note: "Mobile Apps, Vision Camera, Maps" },
-      { name: "Tailwind CSS & Modern CSS", level: 95, note: "Glassmorphism, Grid, Flexbox" },
-      { name: "Zustand & State Management", level: 90, note: "Predictable decoupled state" },
-      { name: "Chart.js & Data Viz", level: 90, note: "Live telemetry and dashboards" },
-      { name: "Vite & Build Tooling", level: 92, note: "Sub-second HMR & Oxlint" }
+      { name: "React.js & Next.js", level: 95, note: "Modern Hooks, Router, Responsive SPAs" },
+      { name: "React Native & Expo", level: 90, note: "Cross-platform mobile, Vision Camera, Maps" },
+      { name: "Tailwind CSS & Bootstrap", level: 95, note: "Glassmorphism, Grid, Mobile-First Styling" },
+      { name: "ASP.NET Razor Pages", level: 90, note: "Server-rendered components & enterprise POS" },
+      { name: "Chart.js & Telemetry Viz", level: 92, note: "Real-time streaming charts & telemetry" },
+      { name: "Zustand & State Stores", level: 90, note: "Decoupled predictable application state" }
     ]
   },
   {
@@ -176,67 +178,104 @@ export const skillCategories = [
     icon: "Server",
     description: "Scalable APIs, append-only ledgers, and edge-native architectures",
     skills: [
-      { name: "Supabase & PostgreSQL", level: 92, note: "RLS Security, Triggers & Edge Functions" },
-      { name: "ASP.NET Core & Razor", level: 88, note: "RESTful services, Enterprise POS" },
-      { name: "WebSockets & Realtime", level: 90, note: "Continuous bidirectional streaming" },
-      { name: "SQLite & File Buffering", level: 88, note: "Embedded local cache & fallback" },
-      { name: "RESTful API Architecture", level: 95, note: "Standardized schemas & CORS" },
-      { name: "Append-Only Accounting", level: 90, note: "Tax & regulatory compliant ledgers" }
+      { name: "ASP.NET Core & Web APIs", level: 95, note: "RESTful endpoints, JWT Auth, Clean Architecture" },
+      { name: "Entity Framework Core", level: 92, note: "Code-first migrations, LINQ, DB optimizations" },
+      { name: "WebSockets & MQTT Protocol", level: 92, note: "Real-time bidirectional device communication" },
+      { name: "SQL Server & PostgreSQL", level: 92, note: "Stored procedures, indexes, RLS security" },
+      { name: "Supabase & MongoDB", level: 88, note: "Document & cloud database stores" },
+      { name: "Microsoft Azure & Cloud", level: 86, note: "Cloud hosting, background tasks & scaling" }
     ]
   },
   {
-    title: "Systems, Embedded & IoT",
+    title: "Systems, IoT & Applied AI",
     icon: "Cpu",
     description: "Connecting physical hardware, biometrics, and distributed protocols",
     skills: [
-      { name: "Biometric Hardware SDKs", level: 92, note: "Face/Finger/RFID Terminal Protocols" },
-      { name: "RS-232 Serial Port I/O", level: 88, note: "Industrial scales & POS peripherals" },
-      { name: "TensorFlow Lite On-Device", level: 85, note: "Fast on-device neural inference" },
-      { name: "Thread-Safe Invokers (STA)", level: 90, note: "Inter-process & COM marshaling" },
-      { name: "Hardware Debounce Logic", level: 92, note: "Event prioritization & anti-duplication" },
-      { name: "Offline Persistence & Sync", level: 90, note: "Resilient SQLite cache & auto-retry" }
+      { name: "IoT Device Integration", level: 95, note: "Biometric readers (Face, RFID, Fingerprint), COM ports" },
+      { name: "RS-232 Serial Port I/O", level: 90, note: "Industrial scales & hardware POS peripherals" },
+      { name: "On-Device Neural Inference", level: 88, note: "TensorFlow Lite & computer vision face models" },
+      { name: "Thread-Safe Invokers (STA)", level: 92, note: "COM / OCX marshaling and hardware thread safety" },
+      { name: "Hardware Debounce Logic", level: 92, note: "Anti-duplication filters & sync prioritization" },
+      { name: "Offline Persistence & Sync", level: 90, note: "SQLite local buffering & auto-healing retries" }
     ]
   }
 ];
 
 export const experienceMilestones = [
   {
-    year: "2026 - Present",
-    role: "Full-Stack Engineer & Systems Architect",
-    company: "Enterprise Software & Cloud Platforms",
+    period: "03/02/2025 – Present",
+    role: "Full Stack Developer",
+    company: "Idea Inns",
     location: "Karachi, Pakistan",
-    description: "Engineering real-time behavioral telemetry dashboards in React 19, distributed cloud scheduling ecosystems on Supabase & PostgreSQL with append-only ledger security, and on-device mobile AI vision pipelines with Expo and TensorFlow Lite.",
-    tags: ["React 19", "Supabase", "React Native", "Expo", "TypeScript", "TensorFlow Lite"]
+    description: "Developing enterprise-level .NET Windows Forms applications integrated with IoT hardware for real-time device monitoring and control. Architecting ASP.NET backend services using MVC architecture, SQL Server, RESTful APIs, JWT authentication, and WebSocket protocols for seamless IoT device communication. Designing and deploying live web applications with React frontends and collaborating with international hardware teams (including Chinese technicians) to ensure efficient IoT integration and real-time data synchronization.",
+    tags: [".NET", "C#", "ASP.NET MVC", "React.js", "SQL Server", "WebSockets", "JWT", "IoT Hardware"]
   },
   {
-    year: "2025 - 2026",
-    role: "Systems & IoT Middleware Engineer",
-    company: "Industrial Biometrics & Retail Automation",
+    period: "01/10/2023 – 31/01/2025",
+    role: "Jr Developer",
+    company: "Axionics Pvt. Ltd",
     location: "Karachi, Pakistan",
-    description: "Engineered desktop systems middleware in C# .NET to orchestrate multi-terminal biometric readers (Face, RFID, Fingerprint) with automated synchronization, SQLite resilience, and real-time WebSocket streaming. Built hardware POS serial peripheral integration.",
-    tags: ["C#", ".NET Framework", "WebSockets", "Hardware OCX", "SQLite", "Serial Ports"]
+    description: "Architected enterprise applications leveraging Python Flask, .NET frameworks, and Razor Pages, integrating RESTful APIs with SQL Server and MongoDB databases. Built Windows Forms desktop solutions and deployed cloud infrastructure on Microsoft Azure, ensuring scalable performance for diverse client requirements. Established IoT device integration with backend systems for real-time data collection, processing, and monitoring.",
+    tags: [".NET Framework", "Windows Forms", "Razor Pages", "Python Flask", "Azure", "SQL Server", "MongoDB", "IoT"]
   },
   {
-    year: "2024 - 2025",
-    role: "Full-Stack & Cloud Systems Developer",
-    company: "Software Architecture & APIs",
+    period: "01/09/2023 – 30/09/2023",
+    role: "Engineering Internee",
+    company: "PAC Kamra MRF",
+    location: "Attock, Pakistan",
+    description: "Assisted senior IT staff with troubleshooting and maintaining mission-critical software applications. Researched and learned about emerging technologies, automation pipelines, and industry best practices in software development.",
+    tags: ["Software Troubleshooting", "Automation", "Systems Maintenance", "Best Practices"]
+  }
+];
+
+export const education = [
+  {
+    degree: "Bachelor of Engineering (BE) in Software Engineering",
+    shortDegree: "Bachelors",
+    institution: "Karachi Institute of Economics and Technology (KIET)",
     location: "Karachi, Pakistan",
-    description: "Architected high-throughput relational databases, RESTful services, and real-time event streaming pipelines. Focused on data integrity, idempotent operations, and secure API gateways.",
-    tags: ["TypeScript", "C#", "PostgreSQL", "REST APIs", "WebSockets"]
+    period: "27/09/2021 – 13/06/2025",
+    field: "Software Engineering",
+    description: "Comprehensive 4-year engineering curriculum focused on software design patterns, distributed enterprise architectures, database management, algorithms, operating systems, and intelligent computer systems.",
+    highlights: [
+      "Specialized in Enterprise .NET, Distributed Systems, and Advanced Web Engineering",
+      "Rigorous coursework in Data Structures, Object-Oriented Analysis, and Computer Networks",
+      "Engineered hardware-integrated software and intelligent vision applications"
+    ]
   },
   {
-    year: "2023 - 2024",
-    role: "Web & Software Developer",
-    company: "Commercial Client Solutions",
+    degree: "Higher Secondary Certificate (Intermediate)",
+    shortDegree: "Intermediate",
+    institution: "Usman Public School Campus 2",
     location: "Karachi, Pakistan",
-    description: "Developed commercial testing and material verification platforms, streamlining inventory, lab certification, and client reporting with PHP and relational databases.",
-    tags: ["PHP", "MySQL", "JavaScript", "HTML5/CSS3", "Security"]
+    period: "01/03/2017 – 04/06/2019",
+    field: "Pre-Engineering",
+    description: "Advanced secondary studies emphasizing analytical mathematics, physics, and chemistry as foundations for engineering problem-solving.",
+    highlights: [
+      "Core focus on Advanced Mathematics, Physics, and Logic Formulation",
+      "Strong analytical and scientific foundation"
+    ]
+  },
+  {
+    degree: "Secondary School Certificate (Matriculation)",
+    shortDegree: "Matriculation",
+    institution: "Usman Public School Campus 13",
+    location: "Karachi, Pakistan",
+    period: "04/06/2007 – 07/01/2017",
+    field: "Computer Science",
+    description: "Secondary education with a specialized focus on Computer Science, fundamental programming concepts, and digital literacy.",
+    highlights: [
+      "Field of study: Computer Science & Algorithmic Basics",
+      "Excellence in science and introductory computing"
+    ]
   }
 ];
 
 export const terminalCommands = {
   help: `Available commands:
   • whoami      - Overview of Engr. Abdul Hadi
+  • education   - Academic degrees & institutions
+  • experience  - Work experience & roles
   • skills      - Core tech stack breakdown
   • systems     - Architecture breakdown of enterprise systems
   • repos       - GitHub and professional profile links
@@ -248,10 +287,24 @@ Role: Software Engineer & Systems Architect
 Location: Karachi, Pakistan
 Focus: Microsoft .NET Ecosystem (C#, ASP.NET Core, EF Core), Modern React & Applied AI (Edge TFLite & Computer Vision)`,
 
-  skills: `Languages: TypeScript, JavaScript, C#, Python, C/C++, PHP, SQL
-Frontend:  React 19, React Native (Expo), Vite, Tailwind CSS, Chart.js, Zustand
-Backend:   Supabase (PostgreSQL RLS), ASP.NET Core, Edge Functions, WebSockets, SQLite
-Systems:   Biometric Hardware SDKs, RS-232 Serial COM, TFLite On-Device`,
+  education: `Academic Background:
+1. Bachelors (BE Software Engineering) [2021 – 2025]
+   • Karachi Institute of Economics and Technology (KIET)
+2. Intermediate (Pre-Engineering) [2017 – 2019]
+   • Usman Public School Campus 2
+3. Matriculation (Computer Science) [2007 – 2017]
+   • Usman Public School Campus 13`,
+
+  experience: `Professional Experience:
+• Idea Inns [Feb 2025 – Present]: Full Stack Developer (.NET, React, IoT, WebSockets, SQL Server)
+• Axionics Pvt. Ltd [Oct 2023 – Jan 2025]: Jr Developer (C#, Python Flask, Azure, MongoDB, IoT)
+• PAC Kamra MRF [Sep 2023]: Engineering Internee (IT Maintenance, Automation)`,
+
+  skills: `Languages: C#, TypeScript, JavaScript, Python, C/C++, PHP, SQL
+Frontend:  React.js, Next.js, Razor Pages, Windows Forms, Tailwind CSS, Bootstrap
+Backend:   ASP.NET Core / MVC, WebSockets, MQTT, REST APIs, EF Core, JWT
+Databases: SQL Server, PostgreSQL, Supabase, MongoDB, MySQL, Azure
+IoT & AI:  Biometric Device SDKs (Face/RFID/Fingerprint), RS-232 COM, TensorFlow Lite`,
 
   systems: `Enterprise Architecture Showcases:
 1. Real-Time Telemetry & Behavioral Analytics Engine -> React 19 + Chart.js Ingestion
@@ -266,6 +319,7 @@ Systems:   Biometric Hardware SDKs, RS-232 Serial COM, TFLite On-Device`,
 
   contact: `Reach out directly:
 • Email:    aabdul.hadikhan10@gmail.com
+• Phone:    (+92) 3332216999
 • LinkedIn: https://www.linkedin.com/in/abdulhadi03/
 • GitHub:   https://github.com/Aadi100
 • Discord:  hype_aadi`

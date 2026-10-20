@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { Mail, Copy, Check, Linkedin, Github, Send, MessageSquare, MapPin } from 'lucide-react';
+import { Mail, Copy, Check, Linkedin, Github, Send, MessageSquare, MapPin, Phone } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function Contact() {
@@ -161,11 +161,19 @@ export default function Contact() {
             </div>
 
             {/* Quick Meta */}
-            <div style={{ marginTop: 'auto', paddingTop: '1rem', borderTop: '1px solid var(--border-subtle)', display: 'flex', gap: '1.5rem', color: 'var(--text-dim)', fontSize: '0.85rem' }}>
+            <div style={{ marginTop: 'auto', paddingTop: '1rem', borderTop: '1px solid var(--border-subtle)', display: 'flex', flexWrap: 'wrap', gap: '1.25rem', color: 'var(--text-dim)', fontSize: '0.85rem' }}>
               <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                 <MapPin size={15} color="#10b981" />
                 <span>Karachi, Pakistan (PKT / UTC+5)</span>
               </span>
+              {personalInfo.phone && (
+                <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                  <Phone size={15} color="#06b6d4" />
+                  <a href={`tel:${personalInfo.phone}`} style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>
+                    {personalInfo.phone}
+                  </a>
+                </span>
+              )}
             </div>
           </div>
 
