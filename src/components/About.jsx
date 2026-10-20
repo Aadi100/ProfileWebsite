@@ -118,11 +118,13 @@ export default function About() {
               Built for Zero Race Conditions, Deterministic Execution & Scale
             </h3>
             <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '1.25rem' }}>
-              Whether managing high-concurrency event loops, or orchestrating an industrial attendance bridge polling 20 biometric terminals with flaky network connections, my focus is always on <strong>resilience</strong>: offline persistence, self-healing retries, idempotent APIs, and atomic transactions.
+              Passionate about leveraging intelligent systems and Clean Architecture to deliver fault-tolerant, scalable enterprise software. From deploying on-device edge AI models (computer vision &amp; TensorFlow Lite) and real-time behavioral anomaly detection, to architecting thread-safe IoT middleware, immutable audit ledgers, and secure database schemas with strict RBAC in Agile environments.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
+              <span className="badge-tag">Edge AI &amp; TensorFlow Lite</span>
+              <span className="badge-tag">Clean Architecture &amp; SOLID</span>
               <span className="badge-tag">Deterministic Debounce Logic</span>
-              <span className="badge-tag">PostgreSQL Filtered Unique Constraints</span>
+              <span className="badge-tag">PostgreSQL / SQL Server RBAC</span>
               <span className="badge-tag">STA Thread-Safe COM Invokers</span>
               <span className="badge-tag">Real-Time WebSocket Streaming</span>
             </div>

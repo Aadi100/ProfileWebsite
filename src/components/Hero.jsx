@@ -105,14 +105,14 @@ export default function Hero() {
             {/* Bio Paragraph */}
             <p
               style={{
-                fontSize: '1.05rem',
+                fontSize: '1rem',
                 color: 'var(--text-muted)',
-                lineHeight: 1.7,
-                maxWidth: '620px',
+                lineHeight: 1.75,
+                maxWidth: '660px',
                 marginBottom: '2rem'
               }}
             >
-              Architecting high-reliability software systems — from <strong>industrial C# .NET biometric IoT middleware</strong> and real-time WebSocket bridges, to scalable <strong>Supabase cloud backends</strong> and responsive <strong>React 19 & Expo mobile applications</strong>.
+              Specializing in the <strong>Microsoft .NET ecosystem (C#, ASP.NET Core, EF Core)</strong>, <strong>modern React</strong>, and <strong>Applied AI</strong>. Combining full-stack and systems engineering with machine learning integration—from deploying <strong>on-device edge AI models (computer vision &amp; TensorFlow Lite)</strong> and real-time behavioral anomaly detection, to architecting high-reliability IoT middleware and scalable cloud platforms with immutable audit ledgers and strict RBAC.
             </p>
 
             {/* CTA Action Buttons */}

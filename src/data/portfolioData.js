@@ -18,7 +18,7 @@ export const personalInfo = {
     { label: "Architecture", value: "Systems to Cloud" },
     { label: "Engineering Scope", value: "Full Stack" }
   ],
-  bio: `I am a Software Engineer who thrives at the intersection of high-reliability systems middleware, industrial IoT, scalable cloud architectures, and modern web applications. From writing C# .NET biometric middleware that connects industrial hardware to real-time WebSockets, to architecting multi-tenant React 19 and Supabase platforms with on-device mobile AI, I build resilient, high-performance software.`
+  bio: `Software Engineer & Systems Architect specializing in the Microsoft .NET ecosystem (C#, ASP.NET Core, EF Core), modern React, and Applied AI. Combines deep full-stack and systems engineering with machine learning integration—from deploying on-device edge AI models (computer vision & TensorFlow Lite) and real-time behavioral anomaly detection, to architecting high-reliability IoT middleware and cloud platforms. Proven track record in designing thread-safe services, immutable audit ledgers, and secure database schemas (SQL Server, PostgreSQL) with strict RBAC. Passionate about leveraging intelligent systems and Clean Architecture to deliver fault-tolerant, scalable enterprise software in Agile environments.`
 };
 
 export const categories = [
@@ -246,7 +246,7 @@ export const terminalCommands = {
   whoami: `Engr. Abdul Hadi (Aadi)
 Role: Software Engineer & Systems Architect
 Location: Karachi, Pakistan
-Focus: Industrial IoT & Biometrics (C# .NET) -> Cloud & Modern Web (React 19, Supabase, Expo Mobile)`,
+Focus: Microsoft .NET Ecosystem (C#, ASP.NET Core, EF Core), Modern React & Applied AI (Edge TFLite & Computer Vision)`,
 
   skills: `Languages: TypeScript, JavaScript, C#, Python, C/C++, PHP, SQL
 Frontend:  React 19, React Native (Expo), Vite, Tailwind CSS, Chart.js, Zustand
